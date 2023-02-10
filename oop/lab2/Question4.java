@@ -1,5 +1,3 @@
-package OOP.lab2;
-
 import java.util.*;
 
 public class Question4 {

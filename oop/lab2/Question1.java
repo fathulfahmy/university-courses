@@ -1,5 +1,3 @@
-package OOP.lab2;
-
 public class Question1 {
     public static void main(String[] args) {
         int m, n, i = 3, j = 4, k = 5;

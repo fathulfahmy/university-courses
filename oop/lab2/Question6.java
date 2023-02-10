@@ -1,5 +1,3 @@
-package OOP.lab2;
-
 public class Question6 {
     public static void main(String[] args) {
         // total number of students in a class are 90

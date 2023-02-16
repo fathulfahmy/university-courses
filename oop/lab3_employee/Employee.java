@@ -32,4 +32,8 @@ public class Employee {
     public String getDepartment() {
         return department;
     }
+
+    public String toString() {
+        return id + "  " + name + " " + department + " ";
+    }
 }

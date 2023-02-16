@@ -1,9 +1,6 @@
-package oop.lab3;
-
-import java.util.*;
-
 public class Account {
     private double balance;
+    private final double minAmount = 20.0;
 
     public void initBalance(double initBalance) {
         if (balance < initBalance)
@@ -22,7 +19,9 @@ public class Account {
 
     public void withdraw(double amount) {
         if (balance < amount)
-            System.out.println("Insufficient amount");
+            System.out.println("Insufficient balance");
+        if ((balance - amount) < minAmount)
+            System.out.println("Withdrawal exceed minimum amount");
         else
             balance -= amount;
     }

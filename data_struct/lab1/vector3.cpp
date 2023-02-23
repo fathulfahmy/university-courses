@@ -8,7 +8,7 @@ int main()
     // declare vector
     vector<int> rec = {1, 2, 3, 4, 5, 6};
     // display vector size
-    cout << "Size of vector is: " << rec.size();
+    cout << "Size of vector is: " << rec.size() << endl;
     // display vector
     for (auto i : rec)
         cout << i << " ";
@@ -40,5 +40,5 @@ int main()
     for (; l < rec.crend(); l++)
         cout << *l << " ";
 
-            return 0;
+    return 0;
 }

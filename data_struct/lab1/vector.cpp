@@ -21,7 +21,7 @@ int main()
     vec.assign(5, 10);
 
     // copy num to vec
-    vec.assign(num, num+2); //copy from index 0 untill before index 2 (i = 0) and (i = 1)
+    vec.assign(num, num + 4); // copy from index 0 untill before index 2 (i = 0) and (i = 1)
 
     // display vector
     for (auto i : vec)

@@ -11,5 +11,6 @@ public class Question5 {
         // calories = bodyweight * 19
         calories = bodyweight * 19;
         System.out.println("Calories needed: " + calories);
+        scanner.close();
     }
 }

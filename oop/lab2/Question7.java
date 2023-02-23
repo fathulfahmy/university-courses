@@ -51,6 +51,7 @@ public class Question7 {
             digit4 -= 10;
 
         System.out.println("Output: " + digit1 + digit2 + digit3 + digit4);
+        scanner.close();
 
     }
 }

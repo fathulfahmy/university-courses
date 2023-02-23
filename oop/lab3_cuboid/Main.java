@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Length: " + cuboid1.getLength());
         System.out.println("Height: " + cuboid1.getHeight());
         System.out.println("Width: " + cuboid1.getWidth());
-        System.out.println("Perimeteer: " + cuboid1.perimeter());
+        System.out.println("Perimeter: " + cuboid1.perimeter());
         System.out.println("Area: " + cuboid1.area());
         System.out.println("Volume: " + cuboid1.volume());
 
@@ -43,7 +43,7 @@ public class Main {
         System.out.println("Length: " + cuboid2.getLength());
         System.out.println("Height: " + cuboid2.getHeight());
         System.out.println("Width: " + cuboid2.getWidth());
-        System.out.println("Perimeteer: " + cuboid2.perimeter());
+        System.out.println("Perimeter: " + cuboid2.perimeter());
         System.out.println("Area: " + cuboid2.area());
         System.out.println("Volume: " + cuboid2.volume());
 
@@ -52,6 +52,7 @@ public class Main {
             System.out.println("\nCuboid 1 is bigger than Cuboid 2");
         else
             System.out.println("\nCuboid 2 is bigger than Cuboid 1");
+        scanner.close();
 
     }
 

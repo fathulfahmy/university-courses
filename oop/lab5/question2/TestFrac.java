@@ -1,5 +1,3 @@
-package question1;
-
 public class TestFrac {
     public static void main(String[] args) {
         Fraction f1 = new Fraction(1, 2);

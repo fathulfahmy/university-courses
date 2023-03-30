@@ -7,9 +7,10 @@ public class Array {
 
         int num[] = new int[10];
         for (int i = 0; i < 10; i++) {
-            System.out.println("Enter number " + (i + 1) + ":");
+            System.out.print("\nEnter number " + (i + 1) + ":");
             num[i] = sc.nextInt();
         }
+        sc.close();
 
     }
 }

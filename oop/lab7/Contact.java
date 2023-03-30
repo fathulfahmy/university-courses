@@ -1,10 +1,40 @@
+
 public class Contact {
 
     // name (String),
-    String name = new String();
+    private String name = new String();
     // phone number (String) and
-    String phoneNum = new String();
+    private String phoneNum = new String();
     // category (String – value can be “Friend”, “Family” and “Work” only).
-    String category = new String();
+    private String category = new String();
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public Contact() {
+        this.name = "unassigned";
+        this.phoneNum = "unassigned";
+        this.category = "unassigned";
+    }
 }

@@ -2,5 +2,5 @@
 	"files.associations": {
 		"iostream": "cpp"
 	},
-	"java.project.sourcePaths": ["oop/lab7"]
+	"java.project.sourcePaths": []
 }

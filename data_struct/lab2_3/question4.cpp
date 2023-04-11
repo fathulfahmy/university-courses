@@ -102,7 +102,7 @@ public:
 
         vector<Book>::iterator it;
         // linear search
-        for (it = record.begin(); it < record.end(); it++)
+        for (it = record->begin(); it != record->end(); it++)
         {
             if ((*it).bookID == inputID)
             {

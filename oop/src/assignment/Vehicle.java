@@ -3,12 +3,14 @@ package assignment;
 import java.time.LocalDate;
 
 public class Vehicle {
+    // Data member
     private String ownerName;
     private String ownerID;
     private String manufacturer;
     private String model;
     private LocalDate expirydate;
 
+    // Constructor
     public Vehicle() {
         ownerName = "Unassigned";
         ownerID = "Unassigned";
@@ -17,6 +19,15 @@ public class Vehicle {
         expirydate = LocalDate.now();
     }
 
+    public Vehicle(String ownerName, String ownerID, String manufacturer, String model, LocalDate expirydate) {
+        setOwnerName(ownerName);
+        setOwnerID(ownerID);
+        setManufacturer(manufacturer);
+        setModel(model);
+        setExpiryDate(expirydate);
+    }
+
+    // Setter
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
@@ -33,10 +44,11 @@ public class Vehicle {
         this.model = model;
     }
 
-    public void setExpirydate(LocalDate expirydate) {
+    public void setExpiryDate(LocalDate expirydate) {
         this.expirydate = expirydate;
     }
 
+    // Getter
     public String getOwnerName() {
         return ownerName;
     }
@@ -53,7 +65,8 @@ public class Vehicle {
         return model;
     }
 
-    public LocalDate getExpirydate() {
+    public LocalDate getExpiryDate() {
         return expirydate;
     }
+
 }

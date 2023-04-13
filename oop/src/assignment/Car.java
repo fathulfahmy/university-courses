@@ -1,22 +1,32 @@
 package assignment;
 
+import java.time.LocalDate;
+
 public class Car extends Vehicle {
-    public double payrate;
-    public int parkingNum;
+    // Data member
+    private double fee;
+    private String parkingLevel;
 
+    // Constructor
     public Car() {
-        payrate = 80;
-        parkingNum = 0;
+        super();
+        fee = 80;
+        parkingLevel = "B3";
     }
 
-    public int setParkingSpot(int parkingNum) {
-        int nextparkingNum;
-        this.parkingNum = parkingNum;
-        nextparkingNum = parkingNum++;
-        return nextparkingNum;
+    public Car(String ownerName, String ownerID, String manufacturer, String model, LocalDate expiryDate) {
+        super(ownerName, ownerID, manufacturer, model, expiryDate);
+        fee = 80;
+        parkingLevel = "B3";
     }
 
-    public int getParkingSpot() {
-        return parkingNum;
+    // Getter
+
+    public double getFee() {
+        return fee;
+    }
+
+    public String getParkingLevel() {
+        return parkingLevel;
     }
 }

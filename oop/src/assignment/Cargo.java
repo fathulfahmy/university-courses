@@ -2,22 +2,22 @@ package assignment;
 
 import java.time.LocalDate;
 
-public class Bike extends Vehicle {
+public class Cargo extends Vehicle {
     // Data member
     private double fee;
     private String parkingLevel;
 
     // Constructor
-    public Bike() {
+    public Cargo() {
         super();
-        fee = 30;
-        parkingLevel = "B1";
+        fee = 0;
+        parkingLevel = "B1 (Loading Bay)";
     }
 
-    public Bike(String ownerName, String ownerID, String manufacturer, String model, LocalDate expiryDate) {
+    public Cargo(String ownerName, String ownerID, String manufacturer, String model, LocalDate expiryDate) {
         super(ownerName, ownerID, manufacturer, model, expiryDate);
-        fee = 30;
-        parkingLevel = "B1";
+        fee = 0;
+        parkingLevel = "B1 (Loading Bay)";
     }
 
     // Getter

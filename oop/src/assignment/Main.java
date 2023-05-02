@@ -101,12 +101,12 @@ public class Main {
             System.out.println("Model: " + vehicle.getModel());
             System.out.println("Expiry Date: " + vehicle.getExpiryDate());
             if (vehicle instanceof Bike) {
-                System.out.println("Parking Fee: " + ((Bike) vehicle).getFee());
+                System.out.println("Parking Fee: RM" + ((Bike) vehicle).getFee());
                 System.out.println("Parking Level: " + ((Bike) vehicle).getParkingLevel());
 
             }
             if (vehicle instanceof Car) {
-                System.out.println("Parking Fee: " + ((Car) vehicle).getFee());
+                System.out.println("Parking Fee: RM" + ((Car) vehicle).getFee());
                 System.out.println("Parking Level: " + ((Car) vehicle).getParkingLevel());
 
             }

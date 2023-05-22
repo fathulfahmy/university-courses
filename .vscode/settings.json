@@ -3,6 +3,6 @@
 		"iostream": "cpp"
 	},
 	"java.project.sourcePaths": [
-		"oop/lab9"
+		"oop/src"
 	]
 }

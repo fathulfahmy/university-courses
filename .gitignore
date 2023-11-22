@@ -1,5 +1,5 @@
 # vscode environment
-**/.vscode
+.vscode/**/*
 
 # build files
 .exe

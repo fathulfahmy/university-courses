@@ -1,7 +1,11 @@
-.vscode
+# vscode environment
+**/.vscode
+
+# build files
 .exe
 .class
 
+# binary files
 *
 !/**/
 !*.*

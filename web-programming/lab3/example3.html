@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Conflicting Styles</title>
+		<style>
+			a.nodec {
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+				font-size: 13pt;
+				color: red;
+			}
+			/* select all ul descendant of ul */
+			ul ul {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<a class="nodec" href="http://www.yahoo.com">YAHOO!</a>
+		<br />
+		<ul>
+			<li>Item 1</li>
+			<ul>
+				Item 1.1
+			</ul>
+		</ul>
+	</body>
+</html>

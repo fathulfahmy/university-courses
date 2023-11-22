@@ -1,8 +1,0 @@
-{
-	"files.associations": {
-		"iostream": "cpp"
-	},
-	"java.project.sourcePaths": [
-		"oop/src"
-	]
-}

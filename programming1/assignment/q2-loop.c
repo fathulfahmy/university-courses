@@ -16,7 +16,7 @@ int main()
     while(num <= 10)
     {
         // Input
-        printf("Enter score: ");
+        printf("Enter score [%d]: ", num);
         scanf("%d", &score);
 
         // Sum loop

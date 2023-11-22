@@ -2,7 +2,7 @@
 int main(void)
 {
     int num, reverse = 0, remark;
-    printf("Enter a number ");
+    printf("Enter a very long number: ");
     scanf("%d", &num);
 
     while (num != 0)
@@ -11,6 +11,6 @@ int main(void)
         reverse = reverse * 10 + remark;
         num = num / 10;
     }
-    printf("reversed number is %d", reverse);
+    printf("reversed number: %d", reverse);
     return 0;
 }

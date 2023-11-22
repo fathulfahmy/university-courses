@@ -39,10 +39,14 @@ void getVote()
         char str0[] = "COE", str1[] = "CCI", str2[] = "CES", str3[] = "COGS";
 
         // Display college name
-        if (i == 0) printf("\nCollege %s\n", str0);
-        if (i == 1) printf("\nCollege %s\n", str1);
-        if (i == 2) printf("\nCollege %s\n", str2);
-        if (i == 3) printf("\nCollege %s\n", str3);
+        if (i == 0)
+            printf("\nCollege %s\n", str0);
+        if (i == 1)
+            printf("\nCollege %s\n", str1);
+        if (i == 2)
+            printf("\nCollege %s\n", str2);
+        if (i == 3)
+            printf("\nCollege %s\n", str3);
 
         char candidate = 'A';
         for (int j = 0; j < CANDIDATE; j++)
@@ -51,7 +55,7 @@ void getVote()
             {
                 // Request input
                 int input = 0;
-                printf("Candidate %c: ", candidate);
+                printf("Enter number of votes for candidate %c: ", candidate);
                 scanf("%d", &input);
                 // Store input
                 if (input > 0)
@@ -83,11 +87,17 @@ void printTable()
     printf("\nCollege \tCandidate A \tCandidate B \tCandidate C \tCandidateD \tCandidate E \tTotal \t\tPercentage\n");
     for (int i = 0; i < COLLEGE; i++)
     {
+        char str0[] = "COE", str1[] = "CCI", str2[] = "CES", str3[] = "COGS";
+
         // College name
-        if (i == 0) printf("%s\t\t", str0);
-        if (i == 1) printf("%s\t\t", str1);
-        if (i == 2) printf("%s\t\t", str2);
-        if (i == 3) printf("%s\t\t", str3);
+        if (i == 0)
+            printf("%s\t\t", str0);
+        if (i == 1)
+            printf("%s\t\t", str1);
+        if (i == 2)
+            printf("%s\t\t", str2);
+        if (i == 3)
+            printf("%s\t\t", str3);
         // Votes
         for (int j = 0; j < CANDIDATE; j++)
             printf("%d\t\t", vote[i][j]);
@@ -113,7 +123,7 @@ void calculateCandidate()
     printf("Total\t\t");
     for (int i = 0; i < CANDIDATE; i++)
         printf("%.0f\t\t", totalCandidate[i]);
-    
+
     // Percentage
     printf("\nPercentage\t");
     for (int i = 0; i < CANDIDATE; i++)
@@ -160,7 +170,7 @@ void linearSearch(float max)
         }
         candidate++;
     }
-    
+
     if (found == 0)
     {
         // Highest vote

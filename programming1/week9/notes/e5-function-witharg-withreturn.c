@@ -19,5 +19,5 @@ int addNumbers(int a, int b)
 int main()
 {
     int sum = 0;
-    sum = addNumbers(2, 4)
+    sum = addNumbers(2, 4);
 }

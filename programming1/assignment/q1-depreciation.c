@@ -13,9 +13,9 @@ int main()
 {
     float undep = 0, dep = 0, n = 0;
 
-    printf("Enter asset value: ");
+    printf("Enter asset value (MYR): ");
     scanf("%f",& undep);
-    printf("Enter n value: ");
+    printf("Enter rate of depreciation: ");
     scanf("%f",&n);
 
     float factor = 2 / n;

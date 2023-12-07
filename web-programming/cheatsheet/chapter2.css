@@ -1,0 +1,168 @@
+/* NOTE: generally any css rule that overlaps will follow order of declaration*/
+/* but there are some special cases */
+/* learn more on "specificity" if you are curious */
+
+/* universal selector */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* element selector */
+p {
+  background-color: red;
+}
+
+/* class selector */
+.my-class {
+}
+
+/* id selector */
+#my-id {
+  /* property: value */
+  /* property name: property value */
+  background-color: red;
+}
+
+/* GROUPING */
+
+/* ungrouped */
+h1 {
+  color: red;
+}
+h2 {
+  color: red;
+}
+p {
+  color: red;
+}
+/* grouped */
+h1,
+h2,
+p {
+  color: antiquewhite;
+}
+
+/* CHAINING */
+
+/* unchained */
+a {
+  color: white;
+}
+.my-class {
+  text-decoration: dashed;
+}
+#my-id {
+  background-color: purple;
+}
+/* chained */
+a.my-class#my-id {
+  color: skyblue;
+  text-decoration: none;
+  background-color: black;
+}
+
+/* ANCESTOR SELECTOR */
+
+/* ancestor: div that has my-class */
+/* child: li */
+
+/* select all li under ancestor no matter how deep it is nested */
+div.my-class li {
+  color: whitesmoke;
+  list-style-type: square;
+  /* list-style-image: url("broctober.gif"); */
+}
+
+.bg-container {
+  border: 1px solid black;
+  height: 100px;
+  width: 100vw;
+  background: green;
+  background: url("broctober.gif");
+  background-size: 100px;
+  background-repeat: repeat-x;
+}
+
+a:hover {
+  color: red;
+}
+
+div {
+  background-color: purple;
+}
+span {
+  background-color: aqua;
+  color: black;
+}
+
+body {
+  height: 4000px;
+}
+/* document normal flow */
+.position-1 {
+  height: 100px;
+  width: 300px;
+  background-color: beige;
+
+  position: static;
+}
+
+/* adjust position relative to current position */
+.position-2 {
+  height: 100px;
+  width: 300px;
+  background-color: blue;
+
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+
+/* adjust position relative to parent */
+.position-3 {
+  height: 100px;
+  width: 300px;
+  background-color: orange;
+
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+/* fixed position */
+.position-4 {
+  height: 100px;
+  width: 300px;
+  background-color: yellow;
+
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+/* will turn into fixed once element is out of the viewport */
+.position-5 {
+  height: 100px;
+  width: 300px;
+  background-color: green;
+
+  position: sticky;
+  top: 0;
+}
+
+.index-item1 {
+  height: 100px;
+  width: 300px;
+  background-color: red;
+  z-index: 2;
+}
+.index-item2 {
+  height: 100px;
+  width: 300px;
+  background-color: pink;
+
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+
+  z-index: -5;
+}

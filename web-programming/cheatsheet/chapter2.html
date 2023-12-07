@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 2</title>
+    <link rel="stylesheet" href="chapter2.css" />
+
+    <style>
+      p {
+        background-color: black;
+      }
+
+      .big-text {
+        background-color: blue;
+      }
+
+      #small-text {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline CSS -->
+    <p
+      style="
+        background-color: red;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+    >
+      <!-- if font1 is not available, search font2, if not, search font3 and so on... -->
+      Lorem.
+    </p>
+
+    <!-- class can be used by more than 1 tag -->
+    <h1 class="big-text">Big Text</h1>
+    <h2 class="big-text"></h2>
+
+    <!-- id must only be used at 1 tag -->
+    <h1 id="small-text">Small Text</h1>
+
+    <!-- chaining -->
+    <a class="my-class" id="my-id" href="http://www.google.com">Go to google</a>
+
+    <!-- ancestor selector -->
+    <div class="my-class">
+      <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <ol>
+          <li>Item4</li>
+          <li>Item5</li>
+          <li>Item6</li>
+        </ol>
+      </ul>
+    </div>
+
+    <div class="bg-container"></div>
+
+    <div class="my-container">
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem <span>ipsum</span> dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <div class="position-1"></div>
+    <div class="position-2"></div>
+    <div class="position-3"></div>
+    <div class="position-4"></div>
+    <div class="position-5"></div>
+  </body>
+</html>

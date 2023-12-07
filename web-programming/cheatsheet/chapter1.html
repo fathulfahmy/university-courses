@@ -1,0 +1,162 @@
+<!-- comment -->
+
+<!-- <element or tag> -->
+<html>
+  <head>
+    <meta
+      name="description"
+      content="Tuah Cafe, a small coffee shop at Bangi"
+    />
+    <meta name="keywords" content="cheap coffee, bangi cafe, cafe tuah" />
+    <meta name="author" content="Fathul Fahmy" />
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0" />
+
+    <!-- redirect user to new website -->
+    <meta
+      http-equiv="refresh"
+      content="5;URL=http://www.newlinktowebsite.com"
+    />
+
+    <!-- <element attribute="value" attribute="value" attribute="element"-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- bgcolor, text, link, vlink, alink and background attribute ONLY FOR <BODY> TAG -->
+  <body bgcolor="white" text="black" link="aqua" alink="red" vlink="green">
+    <!-- until h6 only no h7 and above-->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <!-- link to filename -->
+    <a href="lab2/e1-simple-table.html"></a>
+
+    <!-- link to internet URL -->
+    <a href="http://www.google.com"></a>
+
+    <!-- CAUTION: if no http, it will link to filename www.google.com and display file not found -->
+    <a href="www.google.com">Link to Google</a>
+
+    <a mailto="fathulfahmy@gmail.com"></a>
+
+    <!-- display alt if filename is wrong -->
+    <img
+      src="broctober.jpeg"
+      width="480px"
+      height="320px"
+      alt="Picture of a brocoli"
+    />
+
+    <blockquote>
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam,
+      numquam odit architecto commodi impedit nesciunt consequatur dolor,
+      excepturi eum aperiam ducimus facere laborum veritatis dignissimos! Dolor
+      quae officia quasi?"
+    </blockquote>
+
+    <b>b</b>
+    <big>big</big>
+    <em>em</em>
+    <i>i</i>
+    <small>small</small>
+    <strike>strike</strike>
+    <strong>strong</strong>
+    <sup>sup</sup>
+    <sub>sub</sub>
+    <tt>tt</tt>
+    <u>u</u>
+    <var>var</var>
+
+    <!-- bullet list -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- numbered list -->
+    <ol>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    <!-- nested list -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </ul>
+
+    <!-- create 1 row with 3 col -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- create 1 row with 3 column of headers -->
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <!-- only <td> and <th> can use colspan or rowspan -->
+    <!-- colspan to extend size of column -->
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="1"></td>
+      <td colspan="3"></td>
+    </tr>
+
+    <!-- colspan to extend size of column -->
+    <tr>
+      <td rowspan="2"></td>
+      <td rowspan="1"></td>
+      <td rowspan="3"></td>
+    </tr>
+
+    <!-- map a picture to coffee menu -->
+
+    <!-- coords="x1, y1, x2, y2" -->
+    <map id="picture">
+      <area
+        shape="rect"
+        coords="2,123,54,143"
+        href="coffee-menu.html"
+        alt="Go to coffee menu"
+      />
+    </map>
+
+    <!-- coords="x, y, radius" -->
+    <map id="picture">
+      <area
+        shape="circle"
+        coords="100,36,33"
+        href="coffee-menu.html"
+        alt="Go to coffee menu"
+      />
+    </map>
+
+    <!-- coords="x1, y1, x2, y2, x3, y3 ..." -->
+    <map id="picture">
+      <area
+        shape="poly"
+        coords="162, 25, 154, 39, 158"
+        href="coffee-menu.html"
+        alt="Go to coffee menu"
+      />
+    </map>
+  </body>
+</html>

@@ -37,19 +37,31 @@ const numToCompare2 = parseInt(prompt("Enter second num to be compared"));
 
 if (numToCompare1 > numToCompare2) {
   alert(numToCompare1 + " is larger");
-} else if (numToCompare1 < numToCompare2) {
+  console.log(numToCompare1 + " is larger");
+} 
+
+else if (numToCompare1 < numToCompare2) {
   alert(numToCompare2 + " is larger");
-} else {
+  console.log(numToCompare2 + " is larger");
+} 
+
+else {
   alert(numToCompare1 + " and " + numToCompare2 + "is equal");
+  console.log(numToCompare1 + " and " + numToCompare2 + "is equal");
+} 
 }
 
 if (numToCompare1 > numToCompare2) {
   document.getElementById("comparison-result").innerHTML =
     numToCompare1 + " is larger";
-} else if (numToCompare1 < numToCompare2) {
+} 
+
+else if (numToCompare1 < numToCompare2) {
   document.getElementById("comparison-result").innerHTML =
     numToCompare2 + " is larger";
-} else {
+} 
+
+else {
   document.getElementById("comparison-result").innerHTML =
     numToCompare1 + " and " + numToCompare2 + " is equal";
 }

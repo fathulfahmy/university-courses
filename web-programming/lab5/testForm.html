@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Form Page Example</title>
+    <style></style>
+  </head>
+
+  <body>
+    <form name="form_example" action="testProcess.php" method="post">
+      <h2>Inserting Data From Web Form Into Database</h2>
+
+      What is your name:
+      <input type="text" name="names" placeholder="Fathul" />
+
+      <br /><br />
+
+      What OS do you use:
+      <br />
+      <select name="os">
+        <option value="mac">Mac</option>
+        <option value="windows">Windows</option>
+      </select>
+
+      <br /><br />
+
+      Have you learn php?
+      <br />
+      <input type="radio" name="php" value="yes" />
+      Yes
+      <input type="radio" name="php" value="no" />
+      No
+
+      <br /><br />
+
+      What is your favorite web:
+      <br />
+      <textarea
+        name="web"
+        placeholder="Talk about your fav web"
+        cols="30"
+        rows="8"
+      ></textarea>
+
+      <br /><br />
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

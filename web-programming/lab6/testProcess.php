@@ -4,10 +4,10 @@
     <?php
 
     // retrieve data from POST request sent by form
-    $name = $_POST["names"];
+    $name = $_POST["name"];
     $os = $_POST["os"];
-    $php = $_POST["php"];
-    $web = $_POST["web"];
+    $php = $_POST["learnphp"];
+    $web = $_POST["favweb"];
 
     // display retrieved data
     echo "Your name is $name";

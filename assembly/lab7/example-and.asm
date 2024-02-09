@@ -2,8 +2,8 @@
 .stack 100h
 
 .data
-msg1    db 'Before AND: $'
-msg2    db 'After AND: $'
+msg1    db 'before and: $'
+msg2    db 'after and: $'
 val1    db 34h
 val2    db ?
 
@@ -11,7 +11,7 @@ val2    db ?
 mov ax, @data
 mov ds, ax
 
-; BEFORE OR -------------------
+; before or -------------------
 ; display msg1
 lea dx, msg1
 mov ah, 9h
@@ -29,12 +29,12 @@ int 21h
 mov dl,0ah
 int 21h
 
-; al AND 00101111b ---------------
+; al and 00101111b ---------------
 mov al, val1
 and al, 00101111b
 mov val2, al
 
-; AFTER OR ----------------------
+; after or ----------------------
 ; display msg2
 lea dx, msg2
 mov ah, 9h

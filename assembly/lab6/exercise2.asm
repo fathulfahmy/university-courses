@@ -22,6 +22,7 @@ MOV	ds, ax      ; mandatory
 MOV	dx, offset exercise2
 MOV	ah, 9
 INT 21h
+
 MOV ah, 4ch
 INT 21h
 end
